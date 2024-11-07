@@ -1,0 +1,128 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #282c34;
+    position: relative;
+}
+
+/* Make sure other content is above the canvas */
+#background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+/* Content styling */
+.content-container {
+    position: relative;
+    z-index: 1;
+    /* additional styling */
+}
+
+
+/* Login Page Styling */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+    background: #333;
+    padding: 30px;
+    border-radius: 8px;
+    color: #fff;
+}
+
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+    background: #00c4ff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+}
+
+/* Dashboard Page Styling */
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    z-index: 1;
+}
+
+.logout {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.container {
+    display: flex;
+    gap: 30px;
+    z-index: 1;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #333;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.icon {
+    font-size: 2.5em;
+    margin-top: 20px;
+}
+
+.card p {
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+.register-icon {
+    color: #ff6b6b;
+}
+
+.add-icon {
+    color: #4cd137;
+}
+
+.train-icon {
+    color: #fbc531;
+}
+
+.report-icon {
+    color: #487eb0;
+}
